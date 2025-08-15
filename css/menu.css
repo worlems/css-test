@@ -146,7 +146,6 @@ body {
   left: 0;
   width: 100%;
   height: 3px;
-  background: linear-gradient(90deg, #00d2ff, #3a7bd5);
 }
 
 .sub-item {
@@ -228,6 +227,7 @@ body {
 
   .sub-item:hover .sub-link {
     padding-left: 50px;
+    color: #25ebe1;
   }
 
   .sub-link::before {
