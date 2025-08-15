@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Футболка Стильна</title>
+    <link rel="stylesheet" href="css/card.css" />
+  </head>
+  <body>
+    <a href="index.html" class="back-button">← Головна</a>
+    <div class="product-card">
+      <img src="./img/f.png" alt="Футболка Стильна" class="product-image" />
+
+      <button class="favorite-icon" aria-label="Додати до улюблених">
+        <svg viewBox="0 0 24 24">
+          <use xlink:href="./icons/sprite.svg#heart"></use>
+        </svg>
+      </button>
+
+      <div class="product-content">
+        <h2 class="product-title">Футболка <span>Стильна</span>, 2023</h2>
+        <p class="product-description">
+          Ексклюзивна чорна футболка з авторським дизайном. Обмежена серія.
+        </p>
+
+        <div class="price-container">
+          <span class="old-price">799 грн</span>
+          <span class="new-price">599 грн</span>
+        </div>
+
+        <div class="action-container">
+          <button class="add-to-cart">Додати в кошик</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document
+        .querySelector(".favorite-icon")
+        .addEventListener("click", function () {
+          this.classList.toggle("active");
+        });
+    </script>
+  </body>
+</html>
